@@ -13408,6 +13408,7 @@ figcaption {
   color: var(--color-lightn);
   margin-bottom: 22px;
   transition: var(--transition);
+  text-align: justify;
 }
 .rn-service .inner .content .read-more-button {
   height: 0;
@@ -20110,5 +20111,20 @@ body.white-version {
 .white-version .slider-style-6 .cd-headline span {
   color: var(--color-white) !important;
 }
-
+.expertise-list li span {
+  color: var(--color-primary);
+  font-weight: 500;
+}
+.project-primary {
+  color: var(--color-primary);
+}
+.key-initiatives {
+  color: var(--color-primary);
+  font-family: var(--font-primary);
+  font-size: 20px;
+  line-height: 39px;
+  margin-bottom: 7px;
+  font-weight: 500;
+  transition: var(--transition);
+}
 /*# sourceMappingURL=../maps/style.css.map */

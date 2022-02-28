@@ -528,7 +528,7 @@ ol ul {
 }
 
 .rn-section-gap {
-  padding: 100px 0;
+  padding: 60px 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .rn-section-gap {
@@ -10298,7 +10298,7 @@ Copyright (c) 2015 Daniel Eden
 
 @media only screen and (min-width: 1170px) {
   .cd-headline {
-    font-size: 48px;
+    font-size: 36px;
   }
 }
 
@@ -12041,7 +12041,7 @@ figcaption {
 .slide .content .inner .title {
   color: #ffffff;
   font-weight: 700;
-  font-size: 60px;
+  font-size: 52px;
   line-height: 75px;
   margin-bottom: 22px;
   font-family: var(--font-secondary);
@@ -12275,8 +12275,16 @@ figcaption {
   border: 0;
   vertical-align: middle;
   max-width: 100%;
-  height: auto;
+  height: 680px;
+  object-fit: cover;
 }
+@media screen and (max-width: 1200px) {
+  .slide .thumbnail .inner img {
+    height: auto;
+    object-fit: initial;
+  }
+}
+
 .slide .thumbnail.box-gradient::before {
   width: 100%;
   height: 100%;
@@ -15874,7 +15882,7 @@ div#featured-project-carousel {
 .contact-about-area .title-area h4.title {
   font-size: 29px;
   line-height: 44px;
-  color: var(--color-light);
+  color: var(--color-primary);
   margin-bottom: 9px;
 }
 @media only screen and (max-width: 479px) {
@@ -16799,7 +16807,7 @@ div#featured-project-carousel {
   font-family: var(--font-primary);
 }
 .footer-area .description a {
-  color: var(--color-body);
+  color: var(--color-primary);
   transition: var(--transition);
   position: relative;
 }
@@ -17230,6 +17238,9 @@ div#featured-project-carousel {
   height: 27px;
   position: relative;
   z-index: 1;
+}
+.backto-top:hover svg {
+  color: var(--color-primary);
 }
 
 .portfolio-slick-activation .rn-portfolio-slick {

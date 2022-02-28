@@ -1298,20 +1298,20 @@
             <div class="col-lg-5">
               <div class="contact-about-area">
                 <div class="thumbnail">
-                  <img
-                    src="assets/images/contact/contact1.png"
-                    alt="contact-img"
-                  />
+                  <iframe
+                  title="map"
+                  src='http://maps.google.com/maps?q=40.8404698,-73.8633283&z=13&output=embed'
+                  height="350"
+                  width="100%"
+                  frameborder="0"
+                ></iframe>
                 </div>
                 <div class="title-area">
-                  <h4 class="title">Nevine Acotanza</h4>
-                  <span>Chief Operating Officer</span>
+                  <h4 class="title name">Prosenjit Kumar Mandal</h4>
+                  <span>Full Stack Java Developer</span>
                 </div>
                 <div class="description">
-                  <p>
-                    I am available for freelance work. Connect with me via and
-                    call in to my account.
-                  </p>
+                
                   <span class="phone"
                     >Phone: <a href="tel:01941043264">+01234567890</a></span
                   >
@@ -1336,18 +1336,18 @@
               <div class="contact-form-wrapper">
                 <div class="introduce">
                   <form
-                    class="rnt-contact-form rwt-dynamic-form row"
+                    class="rnt-contact-form row"
                     id="contact-form"
                     method="POST"
-                    action="mail.php"
                   >
+                  <form>
                     <div class="col-lg-6">
                       <div class="form-group">
-                        <label for="contact-name">Your Name</label>
+                        <label for="name">Your Name</label>
                         <input
                           class="form-control form-control-lg"
-                          name="contact-name"
-                          id="contact-name"
+                          name="name"
+                          id="name"
                           type="text"
                         />
                       </div>
@@ -1355,11 +1355,11 @@
 
                     <div class="col-lg-6">
                       <div class="form-group">
-                        <label for="contact-phone">Phone Number</label>
+                        <label for="phone">Phone Number</label>
                         <input
                           class="form-control"
-                          name="contact-phone"
-                          id="contact-phone"
+                          name="phone"
+                          id="phone"
                           type="text"
                         />
                       </div>
@@ -1367,11 +1367,11 @@
 
                     <div class="col-lg-12">
                       <div class="form-group">
-                        <label for="contact-email">Email</label>
+                        <label for="email">Email</label>
                         <input
                           class="form-control form-control-sm"
-                          id="contact-email"
-                          name="contact-email"
+                          id="email"
+                          name="email"
                           type="email"
                         />
                       </div>
@@ -1391,10 +1391,10 @@
 
                     <div class="col-lg-12">
                       <div class="form-group">
-                        <label for="contact-message">Your Message</label>
+                        <label for="message">Your Message</label>
                         <textarea
-                          name="contact-message"
-                          id="contact-message"
+                          name="message"
+                          id="message"
                           cols="30"
                           rows="10"
                         ></textarea>
@@ -1406,11 +1406,17 @@
                         name="submit"
                         type="submit"
                         id="submit"
-                        class="rn-btn"
+                        class="rn-btn mb-5"
                       >
                         <span>SEND MESSAGE</span>
                         <i data-feather="arrow-right"></i>
                       </button>
+                      <div class="alert alert-success alert-dismissible fade show text-center d-none" role="alert" id="contact-alert">
+                        Your message sent successfully!
+                        <button type="button" class="close text-right" data-dismiss="alert" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
                     </div>
                   </form>
                 </div>
@@ -1421,183 +1427,7 @@
       </div>
       <!-- End Contuct section -->
 
-      <!-- Modal Portfolio Body area Start -->
-      <div
-        class="modal fade"
-        id="exampleModalCenter"
-        tabindex="-1"
-        role="dialog"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true"><i data-feather="x"></i></span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <div class="row align-items-center">
-                <div class="col-lg-6">
-                  <div class="portfolio-popup-thumbnail">
-                    <div class="image">
-                      <img
-                        class="w-100"
-                        src="assets/images/portfolio/portfolio-04.jpg"
-                        alt="slide"
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-6">
-                  <div class="text-content">
-                    <h3>
-                      <span>Featured - Design</span> App Design Development.
-                    </h3>
-                    <p class="mb--30">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Cupiditate distinctio assumenda explicabo veniam
-                      temporibus eligendi.
-                    </p>
-                    <p>
-                      Consectetur adipisicing elit. Cupiditate distinctio
-                      assumenda. dolorum alias suscipit rerum maiores aliquam
-                      earum odit, nihil culpa quas iusto hic minus!
-                    </p>
-                    <div class="button-group mt--20">
-                      <a href="#" class="rn-btn thumbs-icon">
-                        <span>LIKE THIS</span>
-                        <i data-feather="thumbs-up"></i>
-                      </a>
-                      <a href="#" class="rn-btn">
-                        <span>VIEW PROJECT</span>
-                        <i data-feather="chevron-right"></i>
-                      </a>
-                    </div>
-                  </div>
-                  <!-- End of .text-content -->
-                </div>
-              </div>
-              <!-- End of .row Body-->
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End Modal Portfolio area -->
-      <!-- Modal Blog Body area Start -->
-      <div
-        class="modal fade"
-        id="exampleModalCenters"
-        tabindex="-1"
-        role="dialog"
-        aria-hidden="true"
-      >
-        <div
-          class="modal-dialog modal-dialog-centered modal-news"
-          role="document"
-        >
-          <div class="modal-content">
-            <div class="modal-header">
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true"><i data-feather="x"></i></span>
-              </button>
-            </div>
-
-            <!-- End of .modal-header -->
-
-            <div class="modal-body">
-              <img
-                src="assets/images/blog/blog-big-01.jpg"
-                alt="news modal"
-                class="img-fluid modal-feat-img"
-              />
-              <div class="news-details">
-                <span class="date">2 May, 2021</span>
-                <h2 class="title">Digital Marketo to Their New Office.</h2>
-                <p>
-                  Nobis eleifend option congue nihil imperdiet doming id quod
-                  mazim placerat facer possim assum. Typi non habent claritatem
-                  insitam; est usus legentis in iis qui facit eorum claritatem.
-                  Investigationes demonstraverunt lectores legere me lius quod
-                  ii legunt saepius. Claritas est etiam processus dynamicus, qui
-                  sequitur mutationem consuetudium lectorum.
-                </p>
-                <h4>Nobis eleifend option conguenes.</h4>
-                <p>
-                  Mauris tempor, orci id pellentesque convallis, massa mi congue
-                  eros, sed posuere massa nunc quis dui. Integer ornare varius
-                  mi, in vehicula orci scelerisque sed. Fusce a massa nisi.
-                  Curabitur sit amet suscipit nisl. Sed eget nisl laoreet,
-                  suscipit enim nec, viverra eros. Nunc imperdiet risus leo, in
-                  rutrum erat dignissim id.
-                </p>
-                <p>
-                  Ut rhoncus vestibulum facilisis. Duis et lorem vitae ligula
-                  cursus venenatis. Class aptent taciti sociosqu ad litora
-                  torquent per conubia nostra, per inceptos himenaeos. Nunc
-                  vitae nisi tortor. Morbi leo nulla, posuere vel lectus a,
-                  egestas posuere lacus. Fusce eleifend hendrerit bibendum.
-                  Morbi nec efficitur ex.
-                </p>
-                <h4>Mauris tempor, orci id pellentesque.</h4>
-                <p>
-                  Nulla non ligula vel nisi blandit egestas vel eget leo.
-                  Praesent fringilla dapibus dignissim. Pellentesque quis quam
-                  enim. Vestibulum ultrices, leo id suscipit efficitur, odio
-                  lorem rhoncus dolor, a facilisis neque mi ut ex. Quisque
-                  tempor urna a nisi pretium, a pretium massa tristique. Nullam
-                  in aliquam diam. Maecenas at nibh gravida, ornare eros non,
-                  commodo ligula. Sed efficitur sollicitudin auctor. Quisque nec
-                  imperdiet purus, in ornare odio. Quisque odio felis,
-                  vestibulum et.
-                </p>
-              </div>
-
-              <!-- Comment Section Area Start -->
-              <div class="comment-inner">
-                <h3 class="title mb--40 mt--50">Leave a Reply</h3>
-                <form action="#">
-                  <div class="row">
-                    <div class="col-lg-6 col-md-12 col-12">
-                      <div class="rnform-group">
-                        <input type="text" placeholder="Name" />
-                      </div>
-                      <div class="rnform-group">
-                        <input type="email" placeholder="Email" />
-                      </div>
-                      <div class="rnform-group">
-                        <input type="text" placeholder="Website" />
-                      </div>
-                    </div>
-                    <div class="col-lg-6 col-md-12 col-12">
-                      <div class="rnform-group">
-                        <textarea placeholder="Comment"></textarea>
-                      </div>
-                    </div>
-                    <div class="col-lg-12">
-                      <a class="rn-btn" href="#"><span>SUBMIT NOW</span></a>
-                    </div>
-                  </div>
-                </form>
-              </div>
-              <!-- Comment Section End -->
-            </div>
-            <!-- End of .modal-body -->
-          </div>
-        </div>
-      </div>
-      <!-- End Modal Blog area -->
+      
       <!-- Back to  top Start -->
       <div class="backto-top">
         <div>
@@ -1615,16 +1445,15 @@
             <div class="footer-area text-center">
               <div class="logo">
                 <a href="index.html">
-                  <img src="assets/images/logo/logo-vertical.png" alt="logo"  />
+                  <img src="assets/images/logo/logo.png" alt="logo" class="img-fluid" />
                 </a>
               </div>
 
               <p class="description mt--30">
                 © 2021. All rights reserved by
                 <a
-                  target="_blank"
-                  href="https://themeforest.net/user/rainbow-themes/portfolio"
-                  >Rainbow-Themes.</a
+                  href="/"
+                  >Prosenjit Kumar Mandal.</a
                 >
               </p>
             </div>
@@ -1646,5 +1475,7 @@
     <script src="assets/js/vendor/particles.js"></script>
     <!-- main JS -->
     <script src="assets/js/main.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="assets/js/email.js"></script>
   </body>
 </html>

@@ -13932,6 +13932,10 @@ div#featured-project-carousel {
   padding-left: 31px;
   border-left: 5px solid #17191c;
 }
+.personal-experience-inner .experience-list-with-no-border {
+  border-left: none;
+  padding-left: 0;
+}
 @media only screen and (max-width: 767px) {
   .personal-experience-inner .experience-list {
     padding-left: 27px;
@@ -13998,6 +14002,12 @@ div#featured-project-carousel {
   background: #222529;
   transition: var(--transition);
 }
+.personal-experience-inner
+  .experience-list-with-no-border
+  .resume-single-list
+  .inner::after {
+  display: none;
+}
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .personal-experience-inner
     .experience-list
@@ -14025,6 +14035,9 @@ div#featured-project-carousel {
   background: #1b1c1d;
   z-index: 0;
 }
+.experience-list-with-no-border .resume-single-list .inner::before {
+  display: none;
+}
 @media only screen and (max-width: 479px) {
   .personal-experience-inner
     .experience-list
@@ -14044,6 +14057,15 @@ div#featured-project-carousel {
   border-bottom: 1px solid #1a1d23;
   padding-bottom: 20px;
   margin-bottom: 20px;
+}
+.personal-experience-inner
+  .experience-list
+  .resume-single-list
+  .inner
+  .heading-no-margin {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: none;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .personal-experience-inner
